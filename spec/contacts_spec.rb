@@ -3,7 +3,9 @@ require_relative '../lib/contacts.rb'
 
 
 describe "#remove_strawberry" do
-  let :contacts do
+  let :contacts.each do
+    |person, contact_details_hash|
+        binding.pry
     {
       "Jon Snow" => {
         name: "Jon",
